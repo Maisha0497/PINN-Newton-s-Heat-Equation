@@ -10,3 +10,5 @@ Using the PyTorch library and torch.autograd module we need to take the partial 
 
 Fig (heat transfer.png). PINN trained on the temperature data (Source: compiled by author).
 We make this PINN using a minimum temperature of 35 celsius and maximum temperature of 45 celsius at a total time lapse of a little over 15 minutes. We start with a heating rate of 0.003 and our network finds a cooling rate of 0.0016 with this PINN.  As we can see there are a few data points and as labelled as training data, in blue dots. What is interesting here is that using only Neural Network regularisation (L2 Network, shown as the red line) can be very deviated from the physical equation. Also, given how the data behaves, there is an increase in temperature at the end after the first 10 minutes. With just the physical equation (orange line), that slight deviation is not evident. Thus, the green line best predicts the temperature change for the land surface after precipitation. 
+
+Thanks to Theodore Wolf, original content at https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a
