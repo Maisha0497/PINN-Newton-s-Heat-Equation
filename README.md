@@ -1,5 +1,8 @@
 # PINN-Newton's-Heat-Equation
 
+![image](https://github.com/Maisha0497/PINN-Newton-s-Heat-Equation/assets/62252679/2f40a8d5-be0e-470b-89a8-43ed5ac34eea)
+
+
 Here, we show an example on how we used PINN when air temperature can heat up via hotter land surface temperatures.
 Heating of the air in contact with the land can be considered as a prediction of temperature after a certain time. As discussed previously, this can be done using a combination of physics and Neural Network. Here we can use a combination of loss functions to leverage both the data loss and physics loss which would be similar to given equation. Datasets can be collected from ERA5 or MODIS. The NetCDF ERA5 temperature files have 3D arrays and using extracting values tools we can get point values.
 Suppose, we know the land-surface temperature which might be a bit high initially and will cool gradually at a certain rate. Suppose, we know the temperature of the environment and land on a single parcel of area for multiple parcels, that way we can deduce the heating dynamic of the environment using Newton’s heat equation. It goes something like this-
